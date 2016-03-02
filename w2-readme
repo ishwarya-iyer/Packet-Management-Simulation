@@ -1,0 +1,89 @@
+Documentation for Warmup Assignment 2
+=====================================
+
++-------+
+| BUILD |
++-------+
+
+Everything is as per the grading guidelines
+
++-----------------+
+| SKIP (Optional) |
++-----------------+
+
+Nothing like that
+
++---------+
+| GRADING |
++---------+
+
+Basic running of the code : 100 out of 100 pts
+
+Missing required section(s) in README file : Everything included (0)
+Cannot compile : No such problem (0)
+Compiler warnings :  No such problem (0)
+"make clean" : It works (0)
+Segmentation faults :  No such problem (0)
+Separate compilation : As per thr spec, I have divided into separate files (0)
+Using busy-wait :  No such problem (0)
+Handling of commandline arguments: (0)
+    1) -n : Handles them as expected
+    2) -lambda : Handles them as expected
+    3) -mu : Handles them as expected
+    4) -r : Handles them as expected
+    5) -B : Handles them as expected
+    6) -P : Handles them as expected
+Trace output : (0)
+    1) regular packets: 7 Lines
+    2) dropped packets: 1 Line
+    3) removed packets: 1 Line plus the earlier no of lines based on their status
+    4) token arrival (dropped or not dropped): mentioned
+
+Statistics output :(0)
+    1) inter-arrival time : Correct Value
+    2) service time : Correct Value
+    3) number of customers in Q1 : Correct Value
+    4) number of customers in Q2 : Correct Value
+    5) number of customers at a server : Correct Value
+    6) time in system : Correct Value
+    7) standard deviation for time in system : Correct Value
+    8) drop probability : Correct Value
+
+Output bad format : No such problems
+
+Output wrong precision for statistics (should be 6-8 significant digits) : No such problems
+
+Large service time test : Handled properly
+
+Large inter-arrival time test : Handled properly
+
+Tiny inter-arrival time test : The sandard sleeping time of nunki is 10 ms it cannot sleep less than that. I have even incorporated nanosleep. still                                the same result. if we remove sleep then it is wrong as the inter arrival time becomes less than required and other is                                busy waiting which is wrong again!
+Tiny service time test :  The sandard sleeping time of nunki is 10 ms it cannot sleep less than that. I have even incorporated nanosleep. still                                the same result. if we remove sleep then it is wrong as the inter arrival time becomes less than required and other is                                busy waiting which is wrong again!
+
+Large total number of customers test :  Handled properly
+
+Large total number of customers with high arrival rate test :  Handled properly
+
+Dropped tokens test :  Handled properly
+
+Cannot handle <Cntrl+C> at all (ignored or no statistics) : No such problems
+
+Can handle <Cntrl+C> but statistics way off : No such problems
+
+Not using condition variables and do some kind of busy-wait : No such problems
+
+Synchronization check : No such problems
+
+Deadlocks : No such problems
+
++------+
+| BUGS |
++------+
+
+No such problems
+
++------------------+
+| OTHER (Optional) |
++------------------+
+
+As specified in the test no deviation
