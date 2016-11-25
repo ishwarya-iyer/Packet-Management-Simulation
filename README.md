@@ -30,7 +30,7 @@ The lambda, mu, r, B, and P parameters all have obvious meanings (according to t
 The default value (i.e., if it's not specified in a commandline option) for lambda is 1 (packets per second), the default value for mu is 0.35 (packets per second), the default value for r is 1.5 (tokens per second), the default value for B is 10 (tokens), the default value for P is 3 (tokens), and the default value for num is 20 (packets). B, P, and num must be positive integers with a maximum value of 2147483647 (0x7fffffff). lambda, mu, and r must be positive real numbers.
 
  Trace File Format:
-    3\n
+    3
     2716   2    9253
     7721   1   15149
     972    3    2614
